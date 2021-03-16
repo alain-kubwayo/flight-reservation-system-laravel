@@ -1,0 +1,219 @@
+*{
+    box-sizing: border-box;
+}
+html, body {
+    background-color: #fff;
+    color: #636b6f;
+    font-family: 'Nunito', sans-serif;
+    font-weight: 200;
+    height: 100vh;
+    margin: 0;
+}
+
+.full-height {
+    height: 100vh;
+}
+
+.flex-center {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+.position-ref {
+    position: relative;
+}
+
+.top-right {
+    position: absolute;
+    right: 10px;
+    top: 18px;
+}
+
+.content {
+    text-align: center;
+}
+
+.title {
+    font-size: 70px;
+    text-transform: uppercase;
+    font-weight: 400;
+    color: #273c75;
+}
+
+.subtitle{
+    color: #273c75;
+    font-size: 20px;
+}
+
+.welcome-cta a {
+    color: #0652DD;
+    padding: 0 25px;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: .1rem;
+    text-decoration: none;
+    background: #333;
+    border-radius: 15px;
+}
+.welcome-cta a:hover{
+    background: #111;
+    border-radius: 15px;
+    color: #fff;
+}
+
+.m-b-md {
+    margin-bottom: 30px;
+}
+
+.welcome{
+    background-image: url('/img/travel.jpeg');
+    background-size: cover;
+}
+
+.airline-container{
+    text-align: left;
+}
+
+.wrapper{
+    max-width: 1440px;
+    padding: 10px;
+    margin: 20px auto;
+}
+
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td{
+    text-align: left;
+    padding: 15px;
+}
+
+th{
+    background-color: #0652DD;
+    color: white;
+}
+
+/* tr:hover {background-color: #f5f5f5;} */
+
+tr:nth-child(even) {background-color: #f2f2f2;}
+
+.flight-link{
+    text-decoration: none;
+    color: #fff;
+    background: #777;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.flight-link:hover{
+    text-decoration: none;
+    color: #333;
+    background: #fff;
+    padding: 4px 8px;
+    border-radius: 5px;
+}
+
+.booking{
+    /* background: #0652DD; */
+    border-radius: 5px;
+    padding: 10px 20px;
+    width: 50%;
+    margin: 10px auto;
+}
+
+.booking h1{
+    text-decoration: underline;
+    color: #273c75;
+}
+
+.booking strong{
+    color: #273c75;
+}
+
+.booking-div{
+    background: #dcdde1;
+    padding: 1px 8px;
+    border-radius: 20px;
+    width: 100%;
+}
+
+.booking-link{
+    margin-top: 50px;
+}
+
+/* Booking Form */
+
+label, input[type="submit"]{
+    display: block;
+    margin-top: 10px;
+}
+
+select, input{
+    padding: 5px;
+    width: 100%;
+    outline: none;
+    border: none;
+    background: #dcdde1;
+}
+
+input:focus{
+    background: #808e9b;
+    color: #fff;
+}
+
+select:focus{
+    background: #808e9b;
+    color: #fff;
+}
+
+
+input[type="submit"]{
+    background: #0652DD;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+}
+
+input[type="submit"]:hover{
+    background: #00a8ff;
+    color: #fff;
+}
+
+.form-container{
+    width: 50%;
+    margin: 0 auto;
+}
+
+.msg{
+    padding: 20px 0;
+    color: #6D214F;
+    background: #fff;
+    border: none;
+    box-shadow: #111;
+    margin-bottom: 20px;
+    border-radius: 20px;
+}
+
+.del-btn{
+    background: #808e9b;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    outline: none;
+    color: #fff;
+}
+
+.del-btn:hover{
+    background:#d2dae2;
+    color: #333;
+}
+
+.admin-welcome-cta{
+    margin-top: 10px;
+}
