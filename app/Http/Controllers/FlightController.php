@@ -22,7 +22,16 @@ class FlightController extends Controller
         return view('flights.create');
     }
 
-    public function store(){
+    public function store(Request $request){
+        $request->validate(
+            [
+                'name'=>['required'],
+                'surname'=>['required'],
+                'date-of-departure'=>['required'],
+                'date-of-return'=>['required'],
+                'promo-code'=>['required']
+            ]
+        );
         $flight = new Flight();
         $flight->name_prefix = request('name-prefix');
         $flight->name = request('name');

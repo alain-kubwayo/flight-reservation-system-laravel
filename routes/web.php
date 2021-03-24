@@ -12,7 +12,7 @@ Route::get('/flights/create', 'FlightController@create')->name('flights.create')
 
 Route::get('/flights/{id}', 'FlightController@show')->middleware('auth')->name('flights.show');
 
-Route::post('/flights', 'FlightController@store');
+Route::post('/flights', 'FlightController@store')->name('flights.store');
 
 Route::delete('/flights/{id}', 'FlightController@destroy')->middleware('auth');
 

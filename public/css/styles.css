@@ -76,15 +76,17 @@ html, body {
 }
 
 .wrapper{
-    max-width: 1440px;
+    max-width: 640px;
     padding: 10px;
     margin: 20px auto;
 }
 
 
 table{
+    /* width: 80%; */
     width: 100%;
     border-collapse: collapse;
+    /* margin: 0 auto; */
 }
 
 th, td{
@@ -190,7 +192,7 @@ input[type="submit"]:hover{
 
 .msg{
     padding: 20px 0;
-    color: #6D214F;
+    color: green;
     background: #fff;
     border: none;
     box-shadow: #111;
@@ -216,4 +218,9 @@ input[type="submit"]:hover{
 
 .admin-welcome-cta{
     margin-top: 10px;
+}
+
+.error{
+    padding-top: 2px;
+    color: red;
 }

@@ -3,7 +3,7 @@
 <!-- <div class="wrapper"> -->
     <div class="form-container">
     <h1>Fill the following form to book your flight</h1>
-    <form action="/flights" method="POST">
+    <form action="{{route('flights.store')}}" method="POST">
         @csrf
         <label for="name-prefix">Prefix: </label>
         <select name="name-prefix" id="name-prefix">
@@ -13,8 +13,14 @@
         </select>
         <label for="name">Given name(s): </label>
         <input type="text" name="name">
+        @error('name')
+            <p class="error">{{$message}}</p>
+        @enderror
         <label for="name">Surname: </label>
         <input type="text" name="surname">
+        @error('surname')
+            <p class="error">{{$message}}</p>
+        @enderror
         <label for="name-of-airline">Airline name: </label>
         <select name="name-of-airline" name="name-of-airline">
             <option value="Rwandair">Rwandair</option>
@@ -47,8 +53,14 @@
         </select>
         <label for="date-of-departure">Date of departure: </label>
         <input type="date" name="date-of-departure">
+        @error('date-of-departure')
+            <p class="error">{{$message}}</p>
+        @enderror
         <label for="date-of-return">Date of return: </label>
         <input type="date" name="date-of-return">
+        @error('date-of-return')
+            <p class="error">{{$message}}</p>
+        @enderror
         <label for="class">Class: </label>
         <select name="class" id="class">
             <option value="Economy">Economy</option>
@@ -58,6 +70,9 @@
         </select>
         <label for="promo-code">Promocode: </label>
         <input type="text" name="promo-code">
+        @error('promo-code')
+            <p class="error">{{$message}}</p>
+        @enderror
         <label for="mode-of-payment">Mode of payment: </label>
         <select name="mode-of-payment" name="mode-of-payment">
             <option value="Cash">Cash</option>
